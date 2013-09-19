@@ -141,6 +141,14 @@ html, body {
   clear: both;
 }
 
+/* line 59, ../sass/_variables.sass */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #cccccc;
+  color: black;
+  padding: 0.2em 0;
+}
+
 @media print {
   /* line 3, ../sass/_devices.sass */
   * {
