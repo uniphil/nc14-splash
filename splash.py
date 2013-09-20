@@ -8,7 +8,7 @@
 """
 
 from babel.core import UnknownLocaleError, get_locale_identifier as locale_id
-from flask import Flask, request, url_for, redirect, abort, render_template
+from flask import Flask, request, url_for, redirect, abort, render_template, Markup
 from flask.ext.babel import Babel, get_locale
 
 
@@ -34,7 +34,7 @@ babel = Babel()
 
 
 def fake_gettext(message):
-    return message
+    return Markup(message)
 
 
 @app.route('/')
