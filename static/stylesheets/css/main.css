@@ -79,14 +79,14 @@ html, body {
   height: 100%;
 }
 
-/* line 4, ../sass/_variables.sass */
+/* line 45, ../sass/_variables.sass */
 .ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
   *text-indent: -9999px;
 }
-/* line 10, ../sass/_variables.sass */
+/* line 51, ../sass/_variables.sass */
 .ir:before {
   content: "";
   display: block;
@@ -94,13 +94,24 @@ html, body {
   height: 150%;
 }
 
-/* line 17, ../sass/_variables.sass */
+/* line 58, ../sass/_variables.sass */
+.fulljust {
+  text-align: justify;
+}
+/* line 60, ../sass/_variables.sass */
+.fulljust:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 66, ../sass/_variables.sass */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
-/* line 22, ../sass/_variables.sass */
+/* line 71, ../sass/_variables.sass */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -112,7 +123,7 @@ html, body {
   width: 1px;
 }
 
-/* line 35, ../sass/_variables.sass */
+/* line 84, ../sass/_variables.sass */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -122,31 +133,160 @@ html, body {
   width: auto;
 }
 
-/* line 44, ../sass/_variables.sass */
+/* line 93, ../sass/_variables.sass */
 .invisible {
   visibility: hidden;
 }
 
-/* line 48, ../sass/_variables.sass */
+/* line 97, ../sass/_variables.sass */
 .clearfix {
   *zoom: 1;
 }
-/* line 51, ../sass/_variables.sass */
+/* line 100, ../sass/_variables.sass */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-/* line 55, ../sass/_variables.sass */
+/* line 104, ../sass/_variables.sass */
 .clearfix:after {
   clear: both;
 }
 
-/* line 59, ../sass/_variables.sass */
+/* line 108, ../sass/_variables.sass */
 .browsehappy {
   margin: 0.2em 0;
   background: #cccccc;
   color: black;
   padding: 0.2em 0;
+}
+
+@font-face {
+  font-family: "asap";
+  src: url("../../font/asap-bold-webfont.eot");
+  src: url("../../font/asap-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/asap-bold-webfont.woff") format("woff"), url("../../font/asap-bold-webfont.ttf") format("truetype"), url("../../font/asap-bold-webfont.svg#asapbold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "asap";
+  src: url("../../font/asap-bolditalic-webfont.eot");
+  src: url("../../font/asap-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/asap-bolditalic-webfont.woff") format("woff"), url("../../font/asap-bolditalic-webfont.ttf") format("truetype"), url("../../font/asap-bolditalic-webfont.svg#asapbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "asap";
+  src: url("../../font/asap-italic-webfont.eot");
+  src: url("../../font/asap-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/asap-italic-webfont.woff") format("woff"), url("../../font/asap-italic-webfont.ttf") format("truetype"), url("../../font/asap-italic-webfont.svg#asapitalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "asap";
+  src: url("../../font/asap-regular-webfont.eot");
+  src: url("../../font/asap-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/asap-regular-webfont.woff") format("woff"), url("../../font/asap-regular-webfont.ttf") format("truetype"), url("../../font/asap-regular-webfont.svg#asapregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "franchise";
+  src: url("../../font/franchise-bold-webfont.eot");
+  src: url("../../font/franchise-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../font/franchise-bold-webfont.woff") format("woff"), url("../../font/franchise-bold-webfont.ttf") format("truetype"), url("../../font/franchise-bold-webfont.svg#franchiseregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 1, ../sass/_global.sass */
+html {
+  font-family: asap, "Open Sans", Verdana, Helvetica, sans-serif;
+}
+
+/* line 4, ../sass/_global.sass */
+header, main, footer {
+  display: block;
+}
+
+/* line 7, ../sass/_global.sass */
+header {
+  font-size: 0;
+}
+/* line 9, ../sass/_global.sass */
+header h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 12, ../sass/_global.sass */
+header .top {
+  height: 36px;
+  line-height: 36px;
+  width: 100%;
+  margin: 18px 0;
+  padding: 0 8%;
+}
+/* line 18, ../sass/_global.sass */
+header .top img {
+  float: left;
+  height: 100%;
+  width: auto;
+  margin-right: 12px;
+}
+/* line 23, ../sass/_global.sass */
+header .top a {
+  float: right;
+  color: #727273;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 30, ../sass/_global.sass */
+header .buddies, header .info {
+  display: inline-block;
+  width: 38%;
+  vertical-align: text-bottom;
+}
+/* line 34, ../sass/_global.sass */
+header .buddies img, header .info img {
+  width: 100%;
+  height: auto;
+}
+/* line 37, ../sass/_global.sass */
+header .buddies {
+  margin: 36px 8% 0 4%;
+}
+/* line 39, ../sass/_global.sass */
+header .info {
+  margin: 36px 4% 16px 8%;
+  font-size: 18px;
+  color: #727273;
+}
+
+/* line 44, ../sass/_global.sass */
+.overlay {
+  width: 100%;
+  height: 360px;
+  padding: 16px 8% 0 8%;
+  font-size: 24px;
+  color: white;
+  background-size: 100% auto;
+  background-position: bottom right;
+}
+/* line 53, ../sass/_global.sass */
+.overlay:nth-child(1) {
+  background-image: url("../../img/hmm.jpg");
+}
+
+/* line 56, ../sass/_global.sass */
+button {
+  height: 60px;
+  width: 180px;
+  border: none;
+  font: 36px bold "franchise", sans-serif;
+  color: white;
+  background: #92b213;
 }
 
 @media print {

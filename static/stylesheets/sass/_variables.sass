@@ -1,4 +1,45 @@
-// Helper classes, adapted from H5BPv4.3.0
+////////////
+// Colors //
+////////////
+
+$cleader: #8766ad
+$centrepreneur: #b4d435
+$cpartner: #f58345
+
+
+////////////////
+// Extentions //
+////////////////
+%justify-contents
+  text-align: justify
+  font-size: 0
+  &:after
+    content: ''
+    display: inline-block
+    width: 100%
+
+//////////////////////////
+// Functions and Mixins //
+//////////////////////////
+
+@function strip-unit($val)
+  @return $val / ($val * 0 + 1)
+
+=retina-sprites($spritesheet)
+  @each $sprite in sprite_names($spritesheet)
+    &.#{$sprite}
+      $positions: ''
+      @each $j in sprite-position($spritesheet, $sprite)
+        $positions: append($positions, $j / 2, space)
+      height: image-height(sprite-file($spritesheet, $sprite)) / 2
+      width: image-width(sprite-file($spritesheet, $sprite)) / 2
+      background-position: $positions
+  background-image: $spritesheet
+  background-size: image-width($spritesheet)/2 image-height($spritesheet)/2
+
+/////////////////////////////////////////////
+// Helper classes, adapted from H5BPv4.3.0 //
+/////////////////////////////////////////////
 
 // Image replacement
 .ir
@@ -12,6 +53,14 @@
     display: block
     width: 0
     height: 150%
+
+// Full justify (includes last line)
+.fulljust
+  text-align: justify
+  &:after
+    content: ''
+    display: inline-block
+    width: 100%
 
 // Hide from both screenreaders and browsers: h5bp.com/u
 .hidden

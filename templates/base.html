@@ -7,11 +7,10 @@
   <head>
       <meta charset="utf-8" />
 
-      <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
       %% block head_top
       %% endblock
 
-      <title>{% block title %}The Startup System{% endblock %}</title>
+      <title>{% block title %}EWB National Conference 2014{% endblock %}</title>
 
       <meta name="description" content="Learn the basics of starting your own business with video lectures, articles, and quizzes!">
       <meta name="author" content="James Bortolus">
@@ -19,9 +18,9 @@
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/css/main.css') }}" />
 
-      <script src="{{ url_for('static', filename='js/plugins/modernizr-2.6.2.min.js) }}"></script>
+      <script src="{{ url_for('static', filename='js/plugins/modernizr-2.6.2.min.js') }}"></script>
       %% block head_scripts
       %% endblock
   </head>
@@ -29,7 +28,6 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    {{ _('hello gettext') }}
     %% block content
         <p>templates should extend this base and override this block. If you ever read this, it means that some developer is <del>incompetent</del> <del>an idiot</del> <del>lazy</del> silly. <small style="font-size:0.75em;font-style:italic;opacity:0.75">--phil</small></p>
     %% endblock
