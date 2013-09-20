@@ -1,25 +1,29 @@
-html
-  font-family: asap, 'Open Sans', Verdana, Helvetica, sans-serif
-
-header, main, footer
-  display: block
+header, .maininner, .conference-points, .sponsors
+  width: 84%
+  max-width: 1000px
+  margin: auto
+.conference-points
+  max-width: 1340px
 
 header
   font-size: 0
   h2
-    font-size: 18px
     font-weight: bold
+    font-family: asap
+    +adjust-font-size-to($base-font-size + 2)
+    +adjust-leading-to(.5)
+  p
+    +adjust-font-size-to($base-font-size)
   .top
     height: 36px
     line-height: 36px
     width: 100%
     margin: 18px 0
-    padding: 0 8%
     img
       float: left
       height: 100%
       width: auto
-      margin-right: 12px
+      margin-right: 18px
     a
       float: right
       color: #727273
@@ -29,29 +33,43 @@ header
 
   .buddies, .info
     display: inline-block
-    width: 38%
-    vertical-align: text-bottom
+    width: 45%
+    vertical-align: bottom
     img
       width: 100%
       height: auto
   .buddies
-    margin: 36px 8% 0 4%
+    margin: 36px 0 0 5%
+    img
+      vertical-align: bottom
   .info
-    margin: 36px 4% 16px 8%
-    font-size: 18px
+    margin: 36px 5% 18px 0
     color: #727273
 
 .overlay
   width: 100%
   height: 360px
-  padding: 16px 8% 0 8%
-  font-size: 24px
+  padding-top: 36px
   color: white
-  background-size: 100% auto
+  text-shadow: 0 0 6px black
+  background-size: 150% auto
   background-position: bottom right
   @for $i from 1 through 1
     &:nth-child(#{$i})
-      background-image: url('../../img/hmm.jpg')//underlay-#{$i}#{$i}.png')
+      background-image: url('../../img/underlay-#{$i+1}.png')
+  p
+    &:first-child
+      +adjust-font-size-to($base-font-size * $gr)
+      +adjust-leading-to(1.2)
+    +trailer(1)
+  strong
+    font-size: 48px
+    font-weight: 300
+    text-transform: lowercase
+  button
+    position: absolute
+    left: 50%
+    margin-left: -90px
 
 button
   height: 60px
@@ -59,4 +77,85 @@ button
   border: none
   font: 36px bold 'franchise', sans-serif
   color: white
-  background: $centrepreneur - #222222
+  background-color: $centrepreneur - #222
+  &:hover
+    cursor: pointer
+    background-color: $centrepreneur - #444
+
+.conference-points
+  margin-top: 48px
+  font-size: 0
+  img
+    height: 96px
+    width: auto
+    margin-bottom: 9px
+  li
+    vertical-align: top
+
+.jumpdown
+  display: inline-block
+  width: 50%
+  text-align: center
+  li
+    display: inline-block
+    width: 38%
+    margin: 0 6%
+    margin-bottom: 1.5rem
+    +adjust-font-size-to($base-font-size)
+
+.signup
+  width: 100%
+  padding: 2rem 0
+  color: white
+  background-color: $cpartner
+  p:first-child
+    +adjust-font-size-to($base-font-size * $gr)
+    line-height: 2rem
+    +trailer(.5)
+  strong
+    font-weight: bold
+  ul
+    list-style-type: disc
+  li
+    margin-left: 1em
+
+  .info
+    width: 60%
+    float: left
+  form
+    width: 35%
+    float: right
+    input
+      width: 100%
+      height: 48px
+      +adjust-font-size-to(1rem)
+
+.sponsors
+  margin: 36px auto
+  text-align: center
+  ul
+    width: 80%
+    margin: 36px auto 0
+  li
+    display: inline-block
+    margin: 0 36px
+    +retina-sprites($sponsors)
+  p
+    font-size: 12px
+  a
+    color: $cleader
+
+footer
+  height: 36px
+  line-height: 36px
+  width: 100%
+  padding: 0 18px
+  color: white
+  background-color: #727273
+  font-size: 12px
+  p
+    float: left
+  small
+    float: right
+  a
+    color: white

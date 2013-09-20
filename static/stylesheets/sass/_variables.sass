@@ -1,3 +1,6 @@
+// Golden Ratio
+$gr: 1.61803398875
+
 ////////////
 // Colors //
 ////////////
@@ -6,6 +9,10 @@ $cleader: #8766ad
 $centrepreneur: #b4d435
 $cpartner: #f58345
 
+//////////////////
+// Spritesheets //
+//////////////////
+$sponsors: sprite-map("sponsors/*.png")
 
 ////////////////
 // Extentions //
@@ -30,12 +37,12 @@ $cpartner: #f58345
     &.#{$sprite}
       $positions: ''
       @each $j in sprite-position($spritesheet, $sprite)
-        $positions: append($positions, $j / 2, space)
+        $positions: append(unquote($positions), $j / 2, space)
       height: image-height(sprite-file($spritesheet, $sprite)) / 2
       width: image-width(sprite-file($spritesheet, $sprite)) / 2
       background-position: $positions
   background-image: $spritesheet
-  background-size: image-width($spritesheet)/2 image-height($spritesheet)/2
+  background-size: image-width(sprite-path($spritesheet))/2 image-height(sprite-path($spritesheet))/2
 
 /////////////////////////////////////////////
 // Helper classes, adapted from H5BPv4.3.0 //

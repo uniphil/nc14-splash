@@ -8,11 +8,13 @@
       <img src="{{ url_for('static', filename='img/logo-hatch-top.png') }}" alt="Hatch" />
       <a href="#">{{ _("Français") }}</a>
     </div>
+
     <div class="info">
       <img src="{{ url_for('static', filename='img/logo-rethink-top.png') }}" alt="Rethink" />
       <h2 class='fulljust'>{{ _("January 9th to 12th | Toronto, Ontario") }}</h2>
       <p>{{ _("Leadership, Entrepreneurship, and Partnership for Global Development") }}</p>
     </div>
+
     <div class="buddies">
       <img src="{{ url_for('static', filename='img/logo-buddies-top.png') }}" alt="NC14 Logo" />
     </div>
@@ -20,41 +22,73 @@
 
   <main>
     <div class="overlay">
-      <p>{{ _("<strong>What's possible</strong><br />if we let go of traditional partnership models in global development?") }}</p>
-      <p>{{ _("Join individuals and lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, facere natus reprehenderit repellat quos pariatur nihil id accusantium corporis laudantium fugiat distinctio consectetur sapiente nostrum veritatis illum omnis non quas!") }}</p>
-      <button>{{ _("Sign up now") }}</button>
+      <div class="maininner">
+        <p>{{ _("<strong>What's possible</strong> if we let go of traditional partnership models in global development?") }}</p>
+        <p>{{ _("Join individuals and lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, facere natus reprehenderit repellat quos pariatur nihil id accusantium corporis laudantium fugiat distinctio consectetur sapiente nostrum veritatis illum omnis non quas!") }}</p>
+        <button>{{ _("Sign up now") }}</button>
+      </div>
     </div>
+
     <div class="conference-points">
       <ul>
-        <li>
-          <img src="{{ url_for('static', filename='img/icon-learn-lead.png') }}" alt="Learn and lead" />
-          <p>{{ _("As both delegate and presenter, explore new theories and strategies.") }}</p>
+        <li class="jumpdown">
+          <ul>
+            <li>
+              <img src="{{ url_for('static', filename='img/icon-learn-lead.png') }}" alt="Learn and lead" />
+              <p>{{ _("As both delegate and presenter, explore new theories and strategies.") }}</p>
+            </li>
+            <li>
+              <img src="{{ url_for('static', filename='img/icon-connect.png') }}" alt="Connect" />
+              <p>{{ _("To experts, investors, and coalition efforts within and beyond your field.") }}</p>
+            </li>
+          </ul>
         </li>
-        <li>
-          <img src="{{ url_for('static', filename='img/icon-connect.png') }}" alt="Connect" />
-          <p>{{ _("To experts, investors, and coalition efforts within and beyond your field.") }}</p>
-        </li>
-        <li>
-          <img src="{{ url_for('static', filename='img/icon-develop.png') }}" alt="Develop" />
-          <p>{{ _("Practical skills and innovative processes to work in global development.") }}</p>
-        </li>
-        <li>
-          <img src="{{ url_for('static', filename='img/icon-share.png') }}" alt="Share" />
-          <p>{{ _("Whether yourself or your organization, promote or test your current ideas.") }}</p>
+        <li class="jumpdown">
+          <ul>
+            <li>
+              <img src="{{ url_for('static', filename='img/icon-develop.png') }}" alt="Develop" />
+              <p>{{ _("Practical skills and innovative processes to work in global development.") }}</p>
+            </li>
+            <li>
+              <img src="{{ url_for('static', filename='img/icon-share.png') }}" alt="Share" />
+              <p>{{ _("Whether yourself or your organization, promote or test your current ideas.") }}</p>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
-    <div class="signup">
-      <p>{{ _("Sign up to the RETHINK 2014 newsletter to recieve more information about the conference as it becomes available.") }}</p>
-      <ul>
-        <li>{{ _("Conference keynotes, sessions, and networking spaces;") }}</li>
-        <li>{{ _("Pricing and registration deadlines;") }}</li>
-        <li>{{ _("Sneak peeks of special events and featured presenters.") }}</li>
+
+    <div class="signup clearfix">
+      <div class="maininner">
+        <div class="info">
+          <p>{{ _("<strong>Sign up to the RETHINK 2014 newsletter</strong> to recieve more information about the conference as it becomes available.") }}</p>
+          <p>{{ _("You'll be the first to know about:") }}</p>
+          <ul>
+            <li>{{ _("Conference keynotes, sessions, and networking spaces") }}</li>
+            <li>{{ _("Pricing and registration deadlines") }}</li>
+            <li>{{ _("Sneak peeks of special events and featured presenters") }}</li>
+          </ul>
+        </div>
+        <form action="#">
+          <label for="email"></label>
+          <input name="email" type="text">
+        </form>
+      </div>
+    </div>
+
+    <div class="sponsors">
+      <h1>{{ _('This conference has been made possible by:') }}</h1>
+      <ul class="fulljust">
+        <li class='hatch ir'>{{ _('Hatch Ltd') }}</li>
+        <li class='transcanada ir'>{{ _('TransCanada Corporation') }}</li>
       </ul>
+      <p>{{ _('Engineers Without Borders is looking for more partners. <a href="{{ url_for('sponsors')">Interested?</a>') }}</p>
     </div>
   </main>
-  <footer>
 
+  <footer>
+    <p>{{ _('For more information, please contact <a href="mailto:someone@example.com?Subject=NC14%20Question">Lorem Ipsum</a>') }}</p>
+    <small>{{ _('All Rights Reserved, 2013') }}</small>
   </footer>
 
 %% endblock
