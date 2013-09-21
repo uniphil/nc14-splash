@@ -5,6 +5,7 @@
     ~~~~~~
 
     Splash page for NC14
+
 """
 
 from babel.core import UnknownLocaleError, get_locale_identifier as locale_id
