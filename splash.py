@@ -46,7 +46,8 @@ def splash(lang):
 
 
 if __name__ == '__main__':
-    app.config['SECRET_KEY'] = 'abc123'
+    import os
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'abc123')
     app.run(debug=True,
             host='0.0.0.0',
-            port=5000)
+            port=os.environ.get('PORT', 5000))
