@@ -4,4 +4,4 @@ MarkupSafe==0.18
 Werkzeug==0.9.4
 argparse==1.2.1
 itsdangerous==0.23
-git+ssh://git@github.com/uniphil/flask-babel.git
+git+https://github.com/uniphil/flask-babel.git
