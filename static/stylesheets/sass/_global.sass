@@ -66,21 +66,23 @@ header
     font-size: 48px
     font-weight: 300
     text-transform: lowercase
-  button
+  .button
     position: absolute
     left: 50%
     margin-left: -90px
 
-button
-  height: 60px
+.button, input[type="submit"]
   width: 180px
+  padding: 12px 0
   border: none
+  text-decoration: none
+  text-shadow: none
+  text-align: center
   font: 36px bold 'franchise', sans-serif
   color: white
   background-color: $centrepreneur - #222
   &:hover
-    cursor: pointer
-    background-color: $centrepreneur - #444
+    background-color: $centrepreneur - #282828
 
 .conference-points
   margin-top: 48px
@@ -103,7 +105,7 @@ button
     margin-bottom: 1.5rem
     +adjust-font-size-to($base-font-size)
 
-.signup
+#signup
   width: 100%
   padding: 2rem 0
   color: white
@@ -125,10 +127,22 @@ button
   form
     width: 35%
     float: right
-    input
+    label
+      text-transform: uppercase
+      +adjust-font-size-to(14px)
+    input[type="text"]
       width: 100%
       height: 48px
+      padding-left: 0.7em
+      border: 1px solid #b8b8b8
+      color: #333334
       +adjust-font-size-to(1rem)
+    input[type="submit"]
+      background-color: $centrepreneur - #080808
+      &:hover
+        background-color: $centrepreneur - #111
+      +leader(.5)
+      float: right
 
 .sponsors
   margin: 36px auto
