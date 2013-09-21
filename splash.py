@@ -20,37 +20,29 @@ app.config.update(BABEL_DEFAULT_LOCALE='en_CA',
                   BABEL_DEFAULT_TIMEZONE='UTC')
 
 
-babel = Babel()
+babel = Babel(app)
 
 
-# @babel.localeselector
-# def get_locale():
-#     if request.path.startswith('/en/'):
-#         return 'en'
-#     elif request.path.startswith('/fr/'):
-#         return 'fr'
-#     else:
-#         return app.config['BABEL_DEFAULT_LOCALE']
-
-
-def fake_gettext(message):
-    return Markup(message)
+@babel.localeselector
+def get_locale():
+    if request.path.startswith('/en/'):
+        return 'en'
+    elif request.path.startswith('/fr/'):
+        return 'fr'
+    else:
+        return request.accept_languages.best_match(['en', 'fr'])
+        # return app.config['BABEL_DEFAULT_LOCALE']
 
 
 @app.route('/')
 def root():
-    print request.path
-    # look at "accept" headers to see if we can pick a best language
-    # default to app.config.get('BABEL_DEFAULT_LOCALE')
-    lang = 'en'
+    lang = get_locale()
     return redirect(url_for('splash', lang=lang))
 
 
 @app.route('/<lang>/')
 def splash(lang):
-    print request.url
-    print request.path
-    return render_template('splash.html', _=fake_gettext)
+    return render_template('splash.html', lang=get_locale())
 
 
 if __name__ == '__main__':
