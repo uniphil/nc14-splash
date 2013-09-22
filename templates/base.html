@@ -20,8 +20,9 @@
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/css/main.css') }}" />
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+      %% block stylesheet
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/css/main.css') }}" />
+      %% endblock
 
       <script src="{{ url_for('static', filename='js/plugins/modernizr-2.6.2.min.js') }}"></script>
       %% block head_scripts

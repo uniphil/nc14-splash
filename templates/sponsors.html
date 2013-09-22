@@ -1,9 +1,13 @@
 %% extends "base.html"
 {% block title %}Sponsor Entrepreneurs and Leaders for Social Innovation{% endblock %}
 
+%% block stylesheet
+  <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/css/sponsor.css') }}" />
+%% endblock
+
 %% block content
 
-<div class='sponsor'>
+<main>
   <h1>{{ _('Sponsor Entrepreneurs & Leaders for Social Innovation') }}</h1>
 
   <p>{{ _('<strong>Engineers Without Borders is looking for partners</strong> to tackle extreme poverty through <strong>systemic innovation</strong>.') }}</p>
@@ -19,7 +23,7 @@
   </ul>
   <p>{{ _('You can view sponsorship opportunities by viewing <strong><a href="%(sponsor_package)s">this</a></strong> document.', sponsor_package = url_for('static', filename='resc/NC2014-Sponsorship-Package.pdf')) }}</p>
 
-  <p>{{ _("Please contact our sponsorship lead, <a href='mailto:amirnosrat@ewb.ca?Subject=Sponsorship+Opportunities'>Amir Nosrat</a>, for any questions or if your organization would like to pursue sponsorship opportunities.") }}</p>
-</div>
+  <p>{{ _("Please contact our sponsorship lead, <strong><a href='mailto:amirnosrat@ewb.ca?Subject=Sponsorship+Opportunities'>Amir Nosrat</a></strong>, for any questions or if your organization would like to pursue sponsorship opportunities.") }}</p>
+</main>
 
 %% endblock

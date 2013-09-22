@@ -1,0 +1,37 @@
+@import compass
+@import "compass/reset/"
+@import "compass/layout/"
+
+@import typography
+
+$gr: 1.61803398875
+
+html, body
+  width: 100%
+main
+  width: 100% - (100% / $gr / $gr)
+  margin-top: 100% / $gr / $gr / $gr / $gr / $gr / $gr
+  margin-left: 100% / $gr / $gr / $gr / $gr / $gr
+h1
+  font-size: 18px * 2.5
+  line-height: 1.3em
+  margin-bottom: 0.5em
+  font-weight: bold
+p, li
+  font-size: 18px
+  line-height: 1.5em
+  margin-bottom: 1em
+li
+  list-style: disc
+  margin-left: 1em
+a
+  color: #0088dd
+  text-decoration: none
+  border-bottom: 1px dashed #22a0ff
+strong
+  font-weight: bold
+
+@media only screen and (max-width:480px)
+  main
+    width: 95%
+    margin: 0 2.5%
