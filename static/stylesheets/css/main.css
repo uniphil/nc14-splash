@@ -527,14 +527,8 @@ footer a {
     width: 100%;
   }
 }
-@media only screen and (max-width: 880px) {
-  /* line 6, ../sass/_devices.sass */
-  .info h2 {
-    font-size: 1rem;
-  }
-}
 @media print {
-  /* line 21, ../sass/_devices.sass */
+  /* line 17, ../sass/_devices.sass */
   * {
     background: transparent !important;
     color: black !important;
@@ -542,43 +536,43 @@ footer a {
     text-shadow: none !important;
   }
 
-  /* line 27, ../sass/_devices.sass */
+  /* line 23, ../sass/_devices.sass */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 30, ../sass/_devices.sass */
+  /* line 26, ../sass/_devices.sass */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 33, ../sass/_devices.sass */
+  /* line 29, ../sass/_devices.sass */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 36, ../sass/_devices.sass */
+  /* line 32, ../sass/_devices.sass */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
-  /* line 39, ../sass/_devices.sass */
+  /* line 35, ../sass/_devices.sass */
   pre, blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 43, ../sass/_devices.sass */
+  /* line 39, ../sass/_devices.sass */
   thead {
     display: table-header-group;
   }
 
-  /* line 46, ../sass/_devices.sass */
+  /* line 42, ../sass/_devices.sass */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 49, ../sass/_devices.sass */
+  /* line 45, ../sass/_devices.sass */
   img {
     max-width: 100% !important;
   }
@@ -587,13 +581,13 @@ footer a {
     margin: 0.5cm;
 }
 
-  /* line 55, ../sass/_devices.sass */
+  /* line 51, ../sass/_devices.sass */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 59, ../sass/_devices.sass */
+  /* line 55, ../sass/_devices.sass */
   h2, h3 {
     page-break-after: avoid;
   }
