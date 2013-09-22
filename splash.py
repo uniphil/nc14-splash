@@ -8,9 +8,9 @@
 
 """
 
-from babel.core import UnknownLocaleError, get_locale_identifier as locale_id
-from flask import Flask, request, url_for, redirect, abort, render_template, Markup
-from flask.ext.babel import Babel, get_locale
+from babel.core import get_locale_identifier as locale_id
+from flask import Flask, request, url_for, redirect, abort, render_template, Markup, flash
+from flask.ext.babel import Babel
 
 
 app = Flask(__name__)
@@ -31,14 +31,13 @@ def get_locale():
     elif request.path.startswith('/fr/'):
         return 'fr'
     else:
-        return request.accept_languages.best_match(['en', 'fr'])
+        return 'en' # return request.accept_languages.best_match(['en', 'fr'])
         # return app.config['BABEL_DEFAULT_LOCALE']
 
 
 @app.route('/')
 def root():
-    lang = get_locale()
-    return redirect(url_for('splash', lang=lang))
+    return redirect(url_for('splash', lang='en'))
 
 
 @app.route('/<lang>/')
@@ -46,7 +45,27 @@ def splash(lang):
     return render_template('splash.html', lang=get_locale())
 
 
+@app.route('/<lang>/', methods=['POST'])
+def save_email(lang):
+    flash('got that email')
+    return redirect(url_for('splash', lang=get_locale()))
+
+
+def freeze_app():
+    from flask_frozen import Freezer
+    app.debug = True
+    freezer = Freezer(app)
+    freezer.freeze()
+    app.debug = False
+
+
 if __name__ == '__main__':
+    import sys
+    if len(sys.argv) == 2 and sys.argv[1] == 'freeze':
+        freeze_app()
+        print 'frozen.'
+        sys.exit(0)
+
     import os
     app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'abc123')
     app.run(debug=True,
