@@ -82,7 +82,7 @@ msgstr "Rencontrer"
 #: templates/splash.html:42
 msgid "To experts, investors, and coalition efforts within and beyond your field."
 msgstr ""
-"des experts, des investisseurs et des efforts de coalition à l’intérieur "
+"Des experts, des investisseurs et des efforts de coalition à l’intérieur "
 "et au-delà de votr champ d’action."
 
 #: templates/splash.html:49
@@ -92,7 +92,7 @@ msgstr "Développer"
 #: templates/splash.html:50
 msgid "Practical skills and innovative processes to work in global development."
 msgstr ""
-"des competences pratiques et des processus novateurs pour travailler en "
+"Des competences pratiques et des processus novateurs pour travailler en "
 "développement mondial."
 
 #: templates/splash.html:53
