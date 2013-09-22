@@ -328,50 +328,52 @@ header .info {
   text-transform: lowercase;
 }
 /* line 69, ../sass/_global.sass */
-.overlay button {
+.overlay .button {
   position: absolute;
   left: 50%;
   margin-left: -90px;
 }
 
 /* line 74, ../sass/_global.sass */
-button {
-  height: 60px;
+.button, input[type="submit"] {
   width: 180px;
+  padding: 12px 0;
   border: none;
+  text-decoration: none;
+  text-shadow: none;
+  text-align: center;
   font: 36px bold "franchise", sans-serif;
   color: white;
   background-color: #92b213;
 }
-/* line 81, ../sass/_global.sass */
-button:hover {
-  cursor: pointer;
-  background-color: #709000;
+/* line 84, ../sass/_global.sass */
+.button:hover, input[type="submit"]:hover {
+  background-color: #8cac0d;
 }
 
-/* line 85, ../sass/_global.sass */
+/* line 87, ../sass/_global.sass */
 .conference-points {
   margin-top: 48px;
   font-size: 0;
 }
-/* line 88, ../sass/_global.sass */
+/* line 90, ../sass/_global.sass */
 .conference-points img {
   height: 96px;
   width: auto;
   margin-bottom: 9px;
 }
-/* line 92, ../sass/_global.sass */
+/* line 94, ../sass/_global.sass */
 .conference-points li {
   vertical-align: top;
 }
 
-/* line 95, ../sass/_global.sass */
+/* line 97, ../sass/_global.sass */
 .jumpdown {
   display: inline-block;
   width: 50%;
   text-align: center;
 }
-/* line 99, ../sass/_global.sass */
+/* line 101, ../sass/_global.sass */
 .jumpdown li {
   display: inline-block;
   width: 38%;
@@ -383,15 +385,15 @@ button:hover {
   line-height: 1.5rem;
 }
 
-/* line 106, ../sass/_global.sass */
-.signup {
+/* line 108, ../sass/_global.sass */
+#signup {
   width: 100%;
   padding: 2rem 0;
   color: white;
   background-color: #f58345;
 }
-/* line 111, ../sass/_global.sass */
-.signup p:first-child {
+/* line 113, ../sass/_global.sass */
+#signup p:first-child {
   font-size: 29px;
   font-size: 1.61803rem;
   line-height: 54px;
@@ -400,77 +402,99 @@ button:hover {
   margin-bottom: 14px;
   margin-bottom: 0.75rem;
 }
-/* line 115, ../sass/_global.sass */
-.signup strong {
+/* line 117, ../sass/_global.sass */
+#signup strong {
   font-weight: bold;
 }
-/* line 117, ../sass/_global.sass */
-.signup ul {
+/* line 119, ../sass/_global.sass */
+#signup ul {
   list-style-type: disc;
 }
-/* line 119, ../sass/_global.sass */
-.signup li {
+/* line 121, ../sass/_global.sass */
+#signup li {
   margin-left: 1em;
 }
-/* line 122, ../sass/_global.sass */
-.signup .info {
+/* line 124, ../sass/_global.sass */
+#signup .info {
   width: 60%;
   float: left;
 }
-/* line 125, ../sass/_global.sass */
-.signup form {
+/* line 127, ../sass/_global.sass */
+#signup form {
   width: 35%;
   float: right;
 }
-/* line 128, ../sass/_global.sass */
-.signup form input {
+/* line 130, ../sass/_global.sass */
+#signup form label {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.77778rem;
+  line-height: 27px;
+  line-height: 1.5rem;
+}
+/* line 133, ../sass/_global.sass */
+#signup form input[type="text"] {
   width: 100%;
   height: 48px;
+  padding-left: 0.7em;
+  border: 1px solid #b8b8b8;
+  color: #333334;
   font-size: 18px;
   font-size: 1rem;
   line-height: 27px;
   line-height: 1.5rem;
 }
+/* line 140, ../sass/_global.sass */
+#signup form input[type="submit"] {
+  background-color: #accc2d;
+  margin-top: 14px;
+  margin-top: 0.75rem;
+  float: right;
+}
+/* line 142, ../sass/_global.sass */
+#signup form input[type="submit"]:hover {
+  background-color: #a3c324;
+}
 
-/* line 133, ../sass/_global.sass */
+/* line 147, ../sass/_global.sass */
 .sponsors {
   margin: 36px auto;
   text-align: center;
 }
-/* line 136, ../sass/_global.sass */
+/* line 150, ../sass/_global.sass */
 .sponsors ul {
   width: 80%;
   margin: 36px auto 0;
 }
-/* line 139, ../sass/_global.sass */
+/* line 153, ../sass/_global.sass */
 .sponsors li {
   display: inline-block;
   margin: 0 36px;
-  background-image: url('/static/img/sponsors-s2414c683af.png');
-  background-size: 113.5px 192px;
+  background-image: url('/static/img/sponsors-s82ae35dcd2.png');
+  background-size: 168px 192px;
 }
 /* line 37, ../sass/_variables.sass */
 .sponsors li.hatch {
   height: 96px;
-  width: 93.5px;
+  width: 168px;
   background-position:  0 0;
 }
 /* line 37, ../sass/_variables.sass */
 .sponsors li.transcanada {
   height: 96px;
-  width: 113.5px;
+  width: 168px;
   background-position:  0 -96px;
 }
-/* line 143, ../sass/_global.sass */
+/* line 157, ../sass/_global.sass */
 .sponsors p {
   font-size: 12px;
 }
-/* line 145, ../sass/_global.sass */
+/* line 159, ../sass/_global.sass */
 .sponsors a {
   color: #8766ad;
 }
 
-/* line 148, ../sass/_global.sass */
+/* line 162, ../sass/_global.sass */
 footer {
   height: 36px;
   line-height: 36px;
@@ -480,15 +504,15 @@ footer {
   background-color: #727273;
   font-size: 12px;
 }
-/* line 156, ../sass/_global.sass */
+/* line 170, ../sass/_global.sass */
 footer p {
   float: left;
 }
-/* line 158, ../sass/_global.sass */
+/* line 172, ../sass/_global.sass */
 footer small {
   float: right;
 }
-/* line 160, ../sass/_global.sass */
+/* line 174, ../sass/_global.sass */
 footer a {
   color: white;
 }

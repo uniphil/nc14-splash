@@ -25,7 +25,7 @@
       <div class="maininner">
         <p>{{ _("<strong>What's possible</strong> if we let go of traditional partnership models in global development?") }}</p>
         <p>{{ _("Join attendees from across two continents and one hundred organizations at Canada's largest and most exciting development conference! Make this event the highlight of your year by joining us and 700 other passionate leaders, entrepreneurs, and partners.") }}</p>
-        <button>{{ _("Sign up now") }}</button>
+        <a class="button" href="#signup">{{ _("Sign up now") }}</a>
       </div>
     </div>
 
@@ -58,7 +58,7 @@
       </ul>
     </div>
 
-    <div class="signup clearfix">
+    <div id="signup" class="clearfix">
       <div class="maininner">
         <div class="info">
           <p>{{ _("<strong>Sign up to the RETHINK 2014 newsletter</strong> to recieve more information about the conference as it becomes available.") }}</p>
@@ -70,8 +70,9 @@
           </ul>
         </div>
         <form action="#">
-          <label for="email"></label>
-          <input name="email" type="text">
+          <label for="email">Email</label>
+          <input name="email" id="email" type="text" placeholder="enter email here">
+          <input type="submit" value="Submit" />
         </form>
       </div>
     </div>
