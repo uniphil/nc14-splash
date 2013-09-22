@@ -36,3 +36,6 @@ nosetests.xml
 
 # Backup garbage
 *~
+
+# Sass
+.sass-cache
