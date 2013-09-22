@@ -39,7 +39,7 @@ msgstr "9 au 12 janvier | Toronto, Ontario"
 
 #: templates/splash.html:15
 msgid "Leadership, Entrepreneurship, and Partnership for Global Development"
-msgstr ""
+msgstr "Leadership, entrepreneuriat et partenariats pour un développement mondail"
 
 #: templates/splash.html:19
 msgid "NC14 Logo"
