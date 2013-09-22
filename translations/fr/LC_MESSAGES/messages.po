@@ -39,8 +39,8 @@ msgstr "9 au 12 janvier | Toronto, Ontario"
 
 #: templates/splash.html:15
 msgid "Leadership, Entrepreneurship, and Partnership for Global Development"
-msgstr "Leadership, entrepreneuriat et partenariats pour un développement 
-mondial"
+msgstr ""
+"Leadership, entrepreneuriat et partenariats pour un développement mondial"
 
 #: templates/splash.html:19
 msgid "NC14 Logo"
@@ -50,8 +50,9 @@ msgstr ""
 msgid ""
 "<strong>What's possible</strong> if we let go of traditional partnership "
 "models in global development?"
-msgstr "Qu’est-ce que ça pourrait vouloir dire que de repenser comment "
-"nous développons nos leaders pour un développement mondial?"
+msgstr ""
+"<strong>Qu’est-ce que ça</strong> pourrait vouloir dire que de repenser "
+"comment nous développons nos leaders pour un développement mondial?"
 
 #: templates/splash.html:27
 msgid ""
@@ -121,11 +122,11 @@ msgstr "Conférences principales, ateliers et espaces de réseautage"
 
 #: templates/splash.html:68
 msgid "Pricing and registration deadlines"
-msgstr "Coûts et dates limites d’inscription;"
+msgstr "Coûts et dates limites d’inscription"
 
 #: templates/splash.html:69
 msgid "Sneak peeks of special events and featured presenters"
-msgstr "Aperçus des événements spéciaux et des conférenciers invités."
+msgstr "Aperçus des événements spéciaux et des conférenciers invités"
 
 #: templates/splash.html:80
 msgid "This conference has been made possible by:"
