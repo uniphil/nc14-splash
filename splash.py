@@ -44,6 +44,9 @@ def root():
 def splash(lang):
     return render_template('splash.html', lang=get_locale())
 
+@app.route('/<lang>/sponsors')
+def sponsors(lang):
+    return render_template('sponsors.html', lang=lang)
 
 @app.route('/<lang>/', methods=['POST'])
 def save_email(lang):

@@ -1,0 +1,25 @@
+%% extends "base.html"
+{% block title %}Sponsor Entrepreneurs and Leaders for Social Innovation{% endblock %}
+
+%% block content
+
+<div class='sponsor'>
+  <h1>{{ _('Sponsor Entrepreneurs & Leaders for Social Innovation') }}</h1>
+
+  <p>{{ _('<strong>Engineers Without Borders is looking for partners</strong> to tackle extreme poverty through <strong>systemic innovation</strong>.') }}</p>
+  <p>{{ _('Is your organization interested in <strong>sponsoring 750-1,000 entrepreneurs</strong> and leaders committed to systemic innovation?') }}</p>
+
+  <p>{{ _('The National Conference provides an opportunity for our partners to:') }}</p>
+  <ul>
+    <li>{{ _('<strong>Engage employees</strong> in an energetic and thought-provoking environment') }}</li>
+    <li>{{ _('Contribute to <strong>content development</strong>') }}</li>
+    <li>{{ _('<strong>Recruit top young Canadian talent</strong> in engineering and multidisciplinary fields') }}</li>
+    <li>{{ _('Develop <strong>brand recognition</strong> among youth, and') }}</li>
+    <li>{{ _('Achieve <strong>corporate social responsibility goals</strong> by building strong communities committed to tackling environmental and social justice challenges.') }}</li>
+  </ul>
+  <p>{{ _('You can view sponsorship opportunities by viewing <strong><a href="%(sponsor_package)s">this</a></strong> document.', sponsor_package = url_for('static', filename='resc/NC2014-Sponsorship-Package.pdf')) }}</p>
+
+  <p>{{ _("Please contact our sponsorship lead, <a href='mailto:amirnosrat@ewb.ca?Subject=Sponsorship+Opportunities'>Amir Nosrat</a>, for any questions or if your organization would like to pursue sponsorship opportunities.") }}</p>
+</div>
+
+%% endblock
