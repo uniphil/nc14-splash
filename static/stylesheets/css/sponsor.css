@@ -115,19 +115,19 @@ html {
   font-style: normal;
 }
 
-/* line 9, ../sass/sponsor.sass */
-html, body {
+/* line 8, ../sass/sponsor.sass */
+html {
   width: 100%;
 }
 
-/* line 11, ../sass/sponsor.sass */
-main {
+/* line 14, ../sass/sponsor.sass */
+body {
   width: 61.8034%;
   margin-top: 5.57281%;
   margin-left: 9.01699%;
 }
 
-/* line 15, ../sass/sponsor.sass */
+/* line 18, ../sass/sponsor.sass */
 h1 {
   font-size: 45px;
   line-height: 1.3em;
@@ -135,34 +135,34 @@ h1 {
   font-weight: bold;
 }
 
-/* line 20, ../sass/sponsor.sass */
+/* line 23, ../sass/sponsor.sass */
 p, li {
   font-size: 18px;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
 
-/* line 24, ../sass/sponsor.sass */
+/* line 27, ../sass/sponsor.sass */
 li {
   list-style: disc;
   margin-left: 1em;
 }
 
-/* line 27, ../sass/sponsor.sass */
+/* line 30, ../sass/sponsor.sass */
 a {
   color: #0088dd;
   text-decoration: none;
   border-bottom: 1px dashed #22a0ff;
 }
 
-/* line 31, ../sass/sponsor.sass */
+/* line 34, ../sass/sponsor.sass */
 strong {
   font-weight: bold;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 35, ../sass/sponsor.sass */
-  main {
+  /* line 38, ../sass/sponsor.sass */
+  body {
     width: 95%;
     margin: 0 2.5%;
   }

@@ -2,13 +2,16 @@
 @import "compass/reset/"
 @import "compass/layout/"
 
+$gr: 1.61803398875
 @import typography
 
-$gr: 1.61803398875
-
-html, body
+html
   width: 100%
-main
+//  color: #f8f8f8
+//  background-image: url('../../img/sponsor-bg.jpg')
+//  background-position: top center
+//  background-size: cover
+body
   width: 100% - (100% / $gr / $gr)
   margin-top: 100% / $gr / $gr / $gr / $gr / $gr / $gr
   margin-left: 100% / $gr / $gr / $gr / $gr / $gr
@@ -32,6 +35,6 @@ strong
   font-weight: bold
 
 @media only screen and (max-width:480px)
-  main
+  body
     width: 95%
     margin: 0 2.5%
