@@ -57,7 +57,7 @@ msgid ""
 "at Canada's largest and most exciting development conference! Make this "
 "event the highlight of your year by joining us and 700 other passionate "
 "leaders, entrepreneurs, and partners."
-msgstr "missing content missing missing content"
+msgstr ""
 
 #: templates/splash.html:28
 msgid "Sign up now"
