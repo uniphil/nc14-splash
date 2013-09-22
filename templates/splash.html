@@ -69,9 +69,9 @@
             <li>{{ _("Sneak peeks of special events and featured presenters") }}</li>
           </ul>
         </div>
-        <form action="#">
+        <form action="/newsletter-signup.php" method="post">
           <label for="email">Email</label>
-          <input name="email" id="email" type="text" placeholder="enter email here">
+          <input name="email" id="email" type="text" required="required" placeholder="enter email here">
           <input type="submit" value="Submit" />
         </form>
       </div>

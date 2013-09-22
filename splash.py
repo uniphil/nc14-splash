@@ -44,9 +44,9 @@ def root():
 def splash(lang):
     return render_template('splash.html', lang=get_locale())
 
-@app.route('/<lang>/sponsors')
+@app.route('/<lang>/sponsors/')
 def sponsors(lang):
-    return render_template('sponsors.html', lang=lang)
+    return render_template('sponsors.html', lang=lang), 200, {'Content-Type': 'text/html'}
 
 @app.route('/<lang>/', methods=['POST'])
 def save_email(lang):
@@ -56,10 +56,11 @@ def save_email(lang):
 
 def freeze_app():
     from flask_frozen import Freezer
+    debugged = app.debug
     app.debug = True
     freezer = Freezer(app)
     freezer.freeze()
-    app.debug = False
+    app.debug = debugged
 
 
 if __name__ == '__main__':
