@@ -517,6 +517,40 @@ footer a {
   color: white;
 }
 
+/* line 177, ../sass/_global.sass */
+.sponsor {
+  width: 61.8034%;
+  margin-left: 9.01699%;
+}
+/* line 180, ../sass/_global.sass */
+.sponsor p, .sponsor li {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+/* line 184, ../sass/_global.sass */
+.sponsor li {
+  list-style: disc;
+  margin-left: 1em;
+}
+/* line 187, ../sass/_global.sass */
+.sponsor h1 {
+  font-size: 45px;
+  line-height: 1.3em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+/* line 192, ../sass/_global.sass */
+.sponsor a {
+  color: #0088dd;
+  text-decoration: none;
+  border-bottom: 1px dashed #22a0ff;
+}
+/* line 196, ../sass/_global.sass */
+.sponsor strong {
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1080px) {
   /* line 2, ../sass/_devices.sass */
   .jumpdown {
