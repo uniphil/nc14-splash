@@ -1,9 +1,5 @@
 <!doctype html>
-<html lang="{{ lang }}">
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="{{ lang }}">
   <head>
       <meta charset="utf-8" />
 
@@ -22,6 +18,7 @@
 
       %% block stylesheet
         <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/css/main.css') }}" />
+        <!--[if IE]> <link href="{{ url_for('static', filename='stylesheets/css/ie.css') }}" media="screen, projection" rel="stylesheet" type="text/css" /> <![endif]-->
       %% endblock
 
       <script src="{{ url_for('static', filename='js/plugins/modernizr-2.6.2.min.js') }}"></script>

@@ -41,8 +41,12 @@ $sponsors: sprite-map("sponsors/*.png")
       height: image-height(sprite-file($spritesheet, $sprite)) / 2
       width: image-width(sprite-file($spritesheet, $sprite)) / 2
       background-position: $positions
-  background-image: $spritesheet
-  background-size: image-width(sprite-path($spritesheet))/2 image-height(sprite-path($spritesheet))/2
+      // IEHACK
+      background-image: url('../../img/sponsors-ie/#{$sprite}-ie.png')
+  // IEHACK
+  .backgroundsize &
+    background-image: $spritesheet
+    background-size: image-width(sprite-path($spritesheet))/2 image-height(sprite-path($spritesheet))/2
 
 /////////////////////////////////////////////
 // Helper classes, adapted from H5BPv4.3.0 //

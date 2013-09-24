@@ -54,11 +54,14 @@ header
   padding-top: 36px
   color: white
   text-shadow: 0 0 6px black
-  background-size: 150% auto
+  .backgroundsize &
+    background-size: 150% auto
   background-position: bottom right
   @for $i from 1 through 1
     &:nth-child(#{$i})
-      background-image: url('../../img/underlay-#{$i+1}.png')
+      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/underlay-#{$i+1}.png', sizingMethod='scale')"
+      .backgroundsize &
+        background-image: url('../../img/underlay-#{$i+1}.png')
   p
     &:first-child
       +adjust-font-size-to($base-font-size * $gr)
