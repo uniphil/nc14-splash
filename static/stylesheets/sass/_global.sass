@@ -57,9 +57,9 @@ header
   .backgroundsize &
     background-size: 150% auto
   background-position: bottom right
+  background-color: $cleader
   @for $i from 1 through 1
     &:nth-child(#{$i})
-      -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../img/underlay-#{$i+1}.png', sizingMethod='scale')"
       .backgroundsize &
         background-image: url('../../img/underlay-#{$i+1}.png')
   p
@@ -90,25 +90,23 @@ header
     background-color: $centrepreneur - #282828
 
 .conference-points
-  margin-top: 48px
+  margin: 48px auto
   font-size: 0
   img
     height: 96px
     width: auto
     margin-bottom: 9px
-  li
-    vertical-align: top
-
-.jumpdown
-  display: inline-block
-  width: 50%
-  text-align: center
+  ul
+    text-align: center
   li
     display: inline-block
-    width: 38%
-    margin: 0 6%
-    margin-bottom: 1.5rem
+    width: 19%
+    margin: 0 3% 1.5rem
+    vertical-align: top
     +adjust-font-size-to($base-font-size)
+  h3
+    font-weight: bold
+    +adjust-leading-to(1.5)
 
 #signup
   width: 100%
@@ -159,7 +157,7 @@ header
   li
     display: inline-block
     margin: 0 36px
-    +retina-sprites($sponsors)
+    +retina-sprites($sponsors, true, 'sponsors')
   p
     font-size: 12px
   a
