@@ -581,42 +581,46 @@ footer a {
   }
 }
 /* line 3, ../sass/sponsor.sass */
+body, html {
+  height: auto;
+}
+
+/* line 6, ../sass/sponsor.sass */
 .overlay {
   text-align: center;
 }
 
-/* line 6, ../sass/sponsor.sass */
+/* line 9, ../sass/sponsor.sass */
 .sponsor-page {
   width: 61.8034%;
-  margin: auto;
-  margin-top: 48px;
+  margin: 48px auto;
 }
-/* line 10, ../sass/sponsor.sass */
+/* line 12, ../sass/sponsor.sass */
 .sponsor-page p, .sponsor-page li {
   font-size: 21.6px;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
-/* line 14, ../sass/sponsor.sass */
+/* line 16, ../sass/sponsor.sass */
 .sponsor-page li {
   list-style: disc;
   margin-left: 1.5em;
 }
-/* line 17, ../sass/sponsor.sass */
+/* line 19, ../sass/sponsor.sass */
 .sponsor-page a {
   color: #0088dd;
   text-decoration: none;
   border-bottom: 1px dashed #22a0ff;
 }
-/* line 21, ../sass/sponsor.sass */
+/* line 23, ../sass/sponsor.sass */
 .sponsor-page strong {
   font-weight: bold;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 25, ../sass/sponsor.sass */
+  /* line 27, ../sass/sponsor.sass */
   .sponsor-page {
     width: 95%;
-    margin: 36px 2.5% 0;
+    margin: 36px 2.5%;
   }
 }
