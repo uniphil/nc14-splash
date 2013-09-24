@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-09-21 15:57-0400\n"
+"POT-Creation-Date: 2013-09-23 20:36-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgid "Rethink"
 msgstr ""
 
 #: templates/splash.html:14
-msgid "January 9th to 12th | Toronto, Ontario"
+msgid "January 9th to 12th<span class='divider'> | </span>Toronto, Ontario"
 msgstr ""
 
 #: templates/splash.html:15
@@ -42,21 +42,20 @@ msgid "Leadership, Entrepreneurship, and Partnership for Global Development"
 msgstr ""
 
 #: templates/splash.html:19
-msgid "NC14 Logo"
+msgid "National Conference 2014 Logo"
 msgstr ""
 
 #: templates/splash.html:26
 msgid ""
-"<strong>What's possible</strong> if we let go of traditional partnership "
-"models in global development?"
+"<strong>RETHINK 2014</strong> is a space curated by EWB, but created in "
+"real time by a diverse, cross-sector, and international delegation."
 msgstr ""
 
 #: templates/splash.html:27
 msgid ""
-"Join attendees from across two continents and one hundred organizations "
-"at Canada's largest and most exciting development conference! Make this "
-"event the highlight of your year by joining us and 700 other passionate "
-"leaders, entrepreneurs, and partners."
+"Join individuals and organizations who are passionate about accelerating "
+"global development in developing leadership, fostering and innovating "
+"entrepreneurship, and building strategic partnerships."
 msgstr ""
 
 #: templates/splash.html:28
@@ -117,31 +116,93 @@ msgstr ""
 msgid "Sneak peeks of special events and featured presenters"
 msgstr ""
 
-#: templates/splash.html:80
+#: templates/splash.html:81
 msgid "This conference has been made possible by:"
 msgstr ""
 
-#: templates/splash.html:82
+#: templates/splash.html:83
 msgid "Hatch Ltd"
 msgstr ""
 
-#: templates/splash.html:83
+#: templates/splash.html:84
 msgid "TransCanada Corporation"
 msgstr ""
 
-#: templates/splash.html:85
+#: templates/splash.html:86
 msgid "Engineers Without Borders is looking for more partners."
 msgstr ""
 
-#: templates/splash.html:85
+#: templates/splash.html:86
 msgid "Interested?"
 msgstr ""
 
-#: templates/splash.html:90
+#: templates/splash.html:91
 msgid "For more information, please contact our sponsorship lead,"
 msgstr ""
 
-#: templates/splash.html:91
+#: templates/splash.html:92
 msgid "All Rights Reserved, 2013"
+msgstr ""
+
+#: templates/sponsors.html:10
+msgid "Sponsor Entrepreneurs & Leaders for Social Innovation"
+msgstr ""
+
+#: templates/sponsors.html:12
+msgid ""
+"<strong>Engineers Without Borders is looking for partners</strong> to "
+"tackle extreme poverty through <strong>systemic innovation</strong>."
+msgstr ""
+
+#: templates/sponsors.html:13
+msgid ""
+"Is your organization interested in <strong>sponsoring 750-1,000 "
+"entrepreneurs</strong> and leaders committed to systemic innovation?"
+msgstr ""
+
+#: templates/sponsors.html:15
+msgid "The National Conference provides an opportunity for our partners to:"
+msgstr ""
+
+#: templates/sponsors.html:17
+msgid ""
+"<strong>Engage employees</strong> in an energetic and thought-provoking "
+"environment"
+msgstr ""
+
+#: templates/sponsors.html:18
+msgid "Contribute to <strong>content development</strong>"
+msgstr ""
+
+#: templates/sponsors.html:19
+msgid ""
+"<strong>Recruit top young Canadian talent</strong> in engineering and "
+"multidisciplinary fields"
+msgstr ""
+
+#: templates/sponsors.html:20
+msgid "Develop <strong>brand recognition</strong> among youth, and"
+msgstr ""
+
+#: templates/sponsors.html:21
+msgid ""
+"Achieve <strong>corporate social responsibility goals</strong> by "
+"building strong communities committed to tackling environmental and "
+"social justice challenges."
+msgstr ""
+
+#: templates/sponsors.html:23
+#, python-format
+msgid ""
+"You can view sponsorship opportunities by viewing <strong><a "
+"href=\"%(sponsor_package)s\">this</a></strong> document."
+msgstr ""
+
+#: templates/sponsors.html:25
+msgid ""
+"Please contact our sponsorship lead, <strong><a "
+"href='mailto:amirnosrat@ewb.ca?Subject=Sponsorship+Opportunities'>Amir "
+"Nosrat</a></strong>, for any questions or if your organization would like"
+" to pursue sponsorship opportunities."
 msgstr ""
 
