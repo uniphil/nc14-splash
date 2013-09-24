@@ -39,3 +39,6 @@ nosetests.xml
 
 # Sass
 .sass-cache
+
+# Funkin' Chromium...
+*/libpeerconnection.log
